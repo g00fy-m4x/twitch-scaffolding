@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0e0e10; /* COLORS.pageBg */
+  --foreground: #efeff1; /* COLORS.textPrimary */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-page-bg: #0e0e10;
+  --color-nav-bg: #18181b;
+  --color-sidebar-bg: #1f1f23;
+  --color-search-btn-bg: #26262c;
+  --color-search-btn-bg-hover: #323239;
+  --color-border: #2a2a2d;
+  --color-text-primary: #efeff1;
+  --color-text-muted: #adadb8;
+  --color-purple: #9147ff;
+  --color-purple-hover: #a970ff;
+  --color-purple-dark: #772ce8;
+  --color-live-red: #eb0400;
+  --color-prime-blue: #00a8fc;
+  --color-tag-overlay: #ffffff1a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Scrollbar styling to match Twitch's dark theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a2d transparent; /* COLORS.border */
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2a2a2d; /* COLORS.border */
+  border-radius: 3px;
+}
